@@ -1,0 +1,217 @@
+@font-face {
+    src: url('./Raleway/Raleway-VariableFont_wght.ttf');
+    font-family: 'Raleway-Regular';    
+    font-weight: bold;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+li{
+    list-style-type: none;
+}
+a{text-decoration: none;}
+.App{
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+}
+.lado-a{
+    width: 350px;
+    display: flex;
+    padding: 10px 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 0 20px 20px 0;
+    background: #020202;
+}
+.lado-a img{
+    background: transparent;
+}
+.lado-b{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -30px;
+    padding: 10px 0;
+}
+/* .body{
+    margin-top: -10px;
+} */
+.menu .inc li{
+    margin: 10px;
+}
+.menu ul{
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+}
+.menu .active{
+    padding: 10px 10px;
+    background: #020202;
+}
+.menu ul li a{
+    color: #020202;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    margin: 7px;
+    position: relative;
+    /* background: #EA3449; */
+    padding: 10px 10px;
+}
+
+.menu  .menu-bar li a::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    border-radius: 100px;
+    width: 00%;
+    background: #2e2627;
+    transition: .4s ease-in-out;
+}
+.menu  .menu-bar li a:hover:after{
+    width: 100%;
+}
+
+.body{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    align-self: stretch;
+}
+.container-ls{
+    position: absolute;
+    width: 250px;
+    z-index: 1222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 400px;
+    padding: 10px 20px;
+    top: 0;
+    left: 0;
+}
+.textos{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 800px;
+    text-align: end;
+}
+.textos h4{
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+    color: #EA3449;
+    text-transform: uppercase;
+}
+.textos div{
+    display: flex;
+    text-transform: uppercase;
+    flex-direction: column;
+    /* margin-top: -50px; */
+    letter-spacing: 3px;
+}
+.textos div h3{
+    font-size: 5rem;
+    margin-bottom: -20px;
+}
+.textos div h1{
+    font-size: 7rem;
+    color: #EA3449;
+    color: linear-gradient(154.16deg, #EA3449 7.85%, #FFFFFF 91.03%);
+    object-fit: var(--webkit-text-fill-color);
+    --webkit-background-clip:text;
+    --webkit-text-fill-color:transparent;
+}
+.textos p{
+    padding-left: 100px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.textos a{
+    padding: 10px 50px;
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+    font-weight: 800;
+    border: 2px solid #020202;
+}
+.textos a:hover{
+    transition: border 1s ease,background 1s ease-in-out,color;
+    background: #020202;
+    color: #fff;
+}
+footer img{
+    width: 80px;
+    object-fit: scale-down;
+    margin: 5px;
+    height: 80px;
+}
+footer .icones{
+    margin-left:5px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0px;
+}
+
+section{
+    margin: 30px 0;
+    padding: 10px 40px;
+}
+.img-ls{
+    border: 2px solid #020202;
+    border-radius: 100%;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(154.16deg, #EA3449 7.85%, #FFFFFF 91.03%);
+    border: 10px solid #fff ;
+    /* border: 1px solid #fbbcd4; */
+    color: #ff669d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 9%;
+    top: 25%;
+}
+.img-ls img{
+    object-fit: scale-down;
+    transform: rotate(45deg);
+    width: 500px;
+    height: 500px;
+}
+.img-ls img:hover{
+    transition: .5s ease-in-out;
+    transform: rotate(0deg);
+}
+.container-ls .ls{
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background: #020202;
+}
